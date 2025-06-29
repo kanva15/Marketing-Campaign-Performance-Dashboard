@@ -6,7 +6,7 @@ This project analyzes a marketing campaign dataset using **MySQL for ETL**, **Py
 
 ## 🚀 Tools & Stack
 - **Data:** Marketing campaign dataset (Kaggle)
-- **Backend:** MySQL (ETL, schema setup, data cleaning, loading)
+- **Backend:** MySQL (schema setup & data storage)
 - **Scripting:** Python (Pandas for initial preprocessing & CSV prep)
 - **Analytics:** Power BI (DAX measures, interactive visuals, slicers)
 
