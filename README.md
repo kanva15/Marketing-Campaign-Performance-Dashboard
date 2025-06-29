@@ -23,7 +23,6 @@ This project analyzes a marketing campaign dataset using **MySQL for ETL**, **Py
 ## 💡 Custom DAX Measures
 This dashboard leverages advanced DAX in Power BI to quantify marketing effectiveness:
 
-``DAX
 Conversion Rate = 
 DIVIDE(SUM(customers[Response]), COUNT(customers[ID]), 0)
 
@@ -55,9 +54,9 @@ DIVIDE(
 ## 💼 Business Impact
 This dashboard helps marketing teams identify high-ROI segments, optimize campaign targeting, and monitor conversion performance over time.
 
-⚖️ License
+## ⚖️ License
 This project is licensed under the MIT License — you are free to fork, adapt, and build upon it.
 
-⭐ Contributions
+## ⭐ Contributions
 Pull requests are welcome!
 If you have ideas to add new metrics, visuals, or extend the segment analysis, feel free to open an issue or submit a PR.
