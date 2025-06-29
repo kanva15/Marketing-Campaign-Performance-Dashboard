@@ -12,6 +12,24 @@ This project analyzes a marketing campaign dataset using **MySQL for ETL**, **Py
 
 ---
 
+## 🐍 Python Preprocessing
+Performed initial CSV inspection and verified delimiters using Python & Pandas, then exported a clean file `cleaned_marketing_campaign.csv` for loading into MySQL.
+
+```python
+import pandas as pd
+
+# Load the original CSV with correct separator
+df = pd.read_csv("marketing_campaign.csv", sep=';')
+
+# Quick inspection
+print(df.head())
+
+# Saved cleaned file
+df.to_csv("cleaned_marketing_campaign.csv", index=False)
+```
+
+---
+
 ## 📈 Key Business Questions Answered
 - ✅ What % of customers responded to marketing campaigns (conversion rate)?
 - ✅ How much more do campaign responders spend vs overall customers (spend lift)?
@@ -22,6 +40,8 @@ This project analyzes a marketing campaign dataset using **MySQL for ETL**, **Py
 
 ## 💡 Custom DAX Measures
 This dashboard leverages advanced DAX in Power BI to quantify marketing effectiveness:
+
+```DAX
 
 Conversion Rate = 
 DIVIDE(SUM(customers[Response]), COUNT(customers[ID]), 0)
@@ -37,6 +57,7 @@ DIVIDE(
     [Average Spend per Respondent] - AVERAGE(customers[Total_Spend]),
     AVERAGE(customers[Total_Spend]), 0)
 )
+```
 
 ## 📊 Dashboard Highlights
 - KPI cards: Total Customers, Total Revenue, Avg Spend, Spend Lift %, Conversion Rate
